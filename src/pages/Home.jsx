@@ -91,7 +91,7 @@ const Home = () => {
                 Find Your Perfect <span className="text-purple-600">Match</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                Our advanced platform connects you with compatible partners
+                Our platform connects you with compatible partners
                 based on your personality, interests, and values. Start your
                 journey to meaningful connections today.
               </p>
@@ -403,8 +403,8 @@ const Home = () => {
                   </svg>
                 </a>
               </div>
-              <p className="text-gray-400">Email: info@cupidalliance.com</p>
-              <p className="text-gray-400">Phone: (555) 123-4567</p>
+              <p className="text-gray-400">Email: officialcupidalliance@gmail.com</p>
+              <p className="text-gray-400">Phone: (234) 816-059-2929</p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
@@ -420,7 +420,7 @@ const Home = () => {
         className="fixed bottom-8 right-8 z-50 group"
       >
         <a
-          href="https://wa.me/2348160592929" // Replace with your actual WhatsApp number (e.g., 1234567890 for US number)
+          href="https://wa.me/2348160592929" 
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#25D366] text-white p-4 rounded-full shadow-xl flex items-center justify-center hover:bg-[#128C7E] transition duration-300 relative"
