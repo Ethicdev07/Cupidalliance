@@ -12,32 +12,32 @@ const TestimonialCarousel = () => {
       rating: 5
     },
     {
-      name: 'Michael Chen',
+      name: 'Michael Ogundipe',
       role: 'Marketing Director',
       content: 'As someone skeptical about online matchmaking, I was blown away by the quality of connections I made.',
       rating: 4
     },
     {
-      name: 'Emily Rodriguez',
+      name: 'Tolu Akinwale',
       role: 'Graphic Designer',
-      content: 'The algorithm really understands what I was looking for. Met my partner after just 3 matches!',
+      content: 'The managements really understands what I was looking for. Met my partner after just 3 matches!',
       rating: 5
     },
     {
-      name: 'David Wilson',
+      name: 'David Nelson',
       role: 'Software Engineer',
       content: 'Never thought I would find someone who shares my love for coding and hiking. Perfect match!',
       rating: 4
     },
     {
-      name: 'Jessica Kim',
+      name: 'Abdulhamid Olawale',
       role: 'Financial Analyst',
       content: 'From our first date, we clicked. Now planning our future together thanks to this platform.',
       rating: 5
     },
     {
-      name: 'Robert Taylor',
-      role: 'Architect',
+      name: 'Kenneth Agbor',
+      role: 'Realator',
       content: 'Quality over quantity - that what I got. Fewer but much better matches than other services.',
       rating: 4
     }
