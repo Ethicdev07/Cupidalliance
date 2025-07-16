@@ -1,31 +1,12 @@
 import { motion } from "framer-motion";
 import Header from "../components/Header";
-import TestimonialCard from "../components/TestimonialCard";
+import TestimonialCarousel from "../components/TestimonialCarousel";
+import Services from '../components/Services';
 import PricingCard from "../components/PricingCard";
 import { FaWhatsapp } from "react-icons/fa";
-import newLogo from '../assets/new cupid-logo.png'
+import newLogo from "../assets/new cupid-logo.png";
 
 const Home = () => {
-  const testimonials = [
-    {
-      name: "Sarah Johnson",
-      role: "Founder at TechStart",
-      content:
-        "Found my perfect match within a week! The platform is incredibly intuitive and the matching expert were spot on.",
-    },
-    {
-      name: "Michael Chen",
-      role: "Marketing Director",
-      content:
-        "As someone skeptical about online matchmaking, I was blown away by the quality of connections I made.",
-    },
-    {
-      name: "Emily Rodriguez",
-      role: "Graphic Designer",
-      content:
-        "The experts really understands what I was looking for. Met my partner after just 3 matches!",
-    },
-  ];
 
   const pricingPlans = [
     {
@@ -69,8 +50,6 @@ const Home = () => {
     },
   ];
 
- 
-
   return (
     <div className="min-h-screen bg-gray-50">
       <Header />
@@ -78,7 +57,6 @@ const Home = () => {
       {/* Hero Section */}
       <section className="bg-gradient-to-br from-purple-50 to-indigo-50 py-20 pt-28">
         {" "}
-        {/* Added pt-28 to account for fixed header */}
         <div className="container mx-auto px-6">
           <div className="flex flex-col md:flex-row items-center">
             <motion.div
@@ -91,9 +69,9 @@ const Home = () => {
                 Find Your Perfect <span className="text-purple-600">Match</span>
               </h1>
               <p className="text-lg text-gray-600 mb-8">
-                Our platform connects you with compatible partners
-                based on your personality, interests, and values. Start your
-                journey to meaningful connections today.
+                Our platform connects you with compatible partners based on your
+                personality, interests, and values. Start your journey to
+                meaningful connections today.
               </p>
               <div className="flex space-x-4">
                 <motion.button
@@ -121,7 +99,7 @@ const Home = () => {
               <img
                 src="https://images.unsplash.com/photo-1516589178581-6cd7833ae3b2?ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
                 alt="Happy couple"
-                className="rounded-2xl shadow-xl w-full h-auto max-h-[400px] object-cover" // Added rounded-2xl and max height
+                className="rounded-2xl shadow-xl w-full h-auto max-h-[400px] object-cover"
               />
             </motion.div>
           </div>
@@ -183,7 +161,7 @@ const Home = () => {
               <div className="flex space-x-4">
                 <div className="text-center">
                   <div className="text-3xl font-bold text-purple-600">
-                    5,000+
+                    1,000+
                   </div>
                   <div className="text-gray-500">Successful Matches</div>
                 </div>
@@ -197,33 +175,12 @@ const Home = () => {
         </div>
       </section>
 
-      {/* Testimonials Section */}
-      <section className="py-20 bg-gray-50">
-        <div className="container mx-auto px-6">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            viewport={{ once: true }}
-            className="text-center mb-16"
-          >
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">
-              Success Stories
-            </h2>
-            <p className="text-gray-600 max-w-2xl mx-auto">
-              Don't just take our word for it. Here's what our members have to
-              say about their experience.
-            </p>
-            <div className="w-20 h-1 bg-purple-600 mx-auto mt-4"></div>
-          </motion.div>
 
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            {testimonials.map((testimonial, index) => (
-              <TestimonialCard key={index} {...testimonial} delay={index} />
-            ))}
-          </div>
-        </div>
-      </section>
+      <Services />
+
+      {/* Testimonials Section */}
+      <TestimonialCarousel />
+
 
       {/* Pricing Section */}
       <section className="py-20 bg-white">
@@ -403,12 +360,16 @@ const Home = () => {
                   </svg>
                 </a>
               </div>
-              <p className="text-gray-400">Email: officialcupidalliance@gmail.com</p>
+              <p className="text-gray-400">
+                Email: officialcupidalliance@gmail.com
+              </p>
               <p className="text-gray-400">Phone: (234) 816-059-2929</p>
             </div>
           </div>
           <div className="border-t border-gray-800 mt-8 pt-8 text-center text-gray-400">
-            <p>© {new Date().getFullYear()} CupidAlliance. All rights reserved.</p>
+            <p>
+              © {new Date().getFullYear()} CupidAlliance. All rights reserved.
+            </p>
           </div>
         </div>
       </footer>
@@ -420,7 +381,7 @@ const Home = () => {
         className="fixed bottom-8 right-8 z-50 group"
       >
         <a
-          href="https://wa.me/2348160592929" 
+          href="https://wa.me/2348160592929"
           target="_blank"
           rel="noopener noreferrer"
           className="bg-[#25D366] text-white p-4 rounded-full shadow-xl flex items-center justify-center hover:bg-[#128C7E] transition duration-300 relative"
